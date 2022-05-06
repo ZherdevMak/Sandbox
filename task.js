@@ -1,23 +1,8 @@
 'use strict';
-function zeroArray(m, n) {
-    // Creates a 2-D array with m rows and n columns of zeroes
-    let newArray = [];
-    let row = [];
-    for (let i = 0; i < m; i++) {
-      // Adds the m-th row into newArray
-  
-      for (let j = 0; j < n; j++) {
-        // Pushes n zeroes into the current row to create the columns
-        row.push(0);
-        
-        
-      }
-     
-     newArray.push(row); // Pushes the current row, which now has n zeroes in it, to the array
-      
-    }
-    return newArray;
-  }
-  
-  let matrix = zeroArray(4, 3);
-  console.log(matrix);
+function createPhoneNumber(numbers){
+  let Number = "(" + numbers[0] + numbers[1] + numbers[2] + ")" +
+    " " + numbers[3] + numbers[4] + numbers[5] + "-" + 
+      numbers[6] + numbers[7] + numbers[8] + numbers[9];
+      alert(Number) 
+}
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
